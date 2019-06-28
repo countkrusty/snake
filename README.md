@@ -1,4 +1,4 @@
-#SNAKE game
+# SNAKE game
 
 This is to get to know basic functions of the ncurses library. 
 Missing features:
