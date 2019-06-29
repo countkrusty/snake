@@ -119,7 +119,11 @@ void Logic()
     }
     if(x >= width || x <= 0 || y >heigth || y <= 0) 
 	gameOver = true; 
-    
+    for(int i = nTail; i > 0; i--)
+        {
+            if(x == tailx[i] && y == taily[i])
+                gameOver = true;
+        }    
     if(x == fruitx && y == fruity){
         fruitx = (rand() % (width-1))+1;
         fruity =(rand() % (heigth-1))+1;
